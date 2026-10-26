@@ -5,24 +5,38 @@ applyTo: "assignments/**/*.md"
 
 # Diretrizes de Estrutura para Markdowns de Tarefas
 
-Todos os arquivos markdown de tarefas devem seguir estas diretrizes:
+Todos os arquivos Markdown de tarefas devem seguir a estrutura definida em [`templates/assignment-template.md`](../../templates/assignment-template.md):
 
-## 1. Uso do Template
+- O arquivo da tarefa deve se chamar `README.md`.
+- Preserve a ordem, os níveis e o texto dos cabeçalhos do template, incluindo emojis. Não traduza nem substitua os cabeçalhos.
+- Preencha todos os placeholders; não deixe instruções entre colchetes no resultado final.
+- Mantenha as duas tarefas previstas no template. Dê a cada uma um título específico e orientado à ação.
+- Escreva o objetivo em 1 ou 2 frases, resumindo o que o aluno aprenderá ou construirá.
+- Em `Descrição`, explique claramente o que o aluno deve fazer.
+- Em `Requisitos`, mantenha a frase `O programa concluído deve:` e liste os resultados esperados em tópicos específicos e verificáveis.
+- Inclua exemplos de entrada e saída em blocos de código quando ajudarem a esclarecer os requisitos.
+- Não acrescente seções fora da estrutura do template, a menos que isso seja solicitado explicitamente.
 
-- Os arquivos markdown de tarefas devem seguir a estrutura em [`templates/assignment-template.md`](../../templates/assignment-template.md).
-- A tarefa deve ser criada como um arquivo `README.md`
-- Não remova ou pule seções obrigatórias do template.
+Os cabeçalhos e subtítulos obrigatórios são:
 
-## 2. Orientação das Seções
+```markdown
+# 📘 Atividade: [Título da Atividade]
 
-Os cabeçalhos das seções devem usar EXATAMENTE o mesmo texto do template, incluindo os ícones emoji. NÃO traduza os cabeçalhos.
+## 🎯 Objetivo
 
-- `# 📘 Assignment: [Assignment Title]` — Substitua `[Assignment Title]` por um nome curto e descritivo (ex: `Python Basics`, `Loops and Conditionals`, `Functions and Modules`).
-- `## 🎯 Objective` — Escreva 1-2 frases resumindo o que o aluno aprenderá ou realizará. Foque nas principais habilidades ou conceitos.
-- `## 📝 Tasks` — Para cada tarefa, use `### 🛠️ [Task Title]`:
-   - Use um nome de tarefa específico e orientado à ação
-   - Na Descrição, indique claramente o que o aluno deve fazer.
-   - Nos Requisitos, use bullet points para listar os resultados ou funcionalidades esperadas. Seja específico e mensurável
-   - Forneça exemplos de entrada/saída em blocos de código se útil.
+## 📝 Tarefas
 
-Não inclua seções extras a menos que explicitamente especificado.
+### 🛠️ [Título da Tarefa 1]
+
+#### Descrição
+
+#### Requisitos
+O programa concluído deve:
+
+### 🛠️ [Título da Tarefa 2]
+
+#### Descrição
+
+#### Requisitos
+O programa concluído deve:
+```
