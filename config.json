@@ -72,6 +72,20 @@
           "type": "python"
         }
       ]
+    },
+    {
+      "id": "unit-testing-with-unittest",
+      "title": "Automated Testing with unittest",
+      "description": "Write beginner-friendly unit tests with Python's standard-library unittest module and use test failures to find a bug.",
+      "path": "assignments/unit-testing-with-unittest",
+      "dueDate": "2026-11-02",
+      "attachments": [
+        {
+          "name": "Starter Code",
+          "file": "starter-code.py",
+          "type": "python"
+        }
+      ]
     }
   ]
 }
